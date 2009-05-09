@@ -1,5 +1,5 @@
 def sloc
-  `sloccount #{File.dirname(__FILE__)}/lib`  
+  `sloccount #{File.dirname(__FILE__)}/../lib #{File.dirname(__FILE__)}/../ext`
 end
 
 desc "Output sloccount report.  You'll need sloccount installed."
