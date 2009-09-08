@@ -4331,6 +4331,10 @@
         
         Element.addMethods();
         var search_index = [
+          { method: 'major', module: 'prototypeproject::version', html: '<a href="classes/PrototypeProject/Version.html#M000002"><span class="method_name">major</span> <span class="module_name">(PrototypeProject::Version)</span></a>' },
+          { method: 'minor', module: 'prototypeproject::version', html: '<a href="classes/PrototypeProject/Version.html#M000003"><span class="method_name">minor</span> <span class="module_name">(PrototypeProject::Version)</span></a>' },
+          { method: 'string', module: 'prototypeproject::version', html: '<a href="classes/PrototypeProject/Version.html#M000001"><span class="method_name">string</span> <span class="module_name">(PrototypeProject::Version)</span></a>' },
+          { method: 'tiny', module: 'prototypeproject::version', html: '<a href="classes/PrototypeProject/Version.html#M000004"><span class="method_name">tiny</span> <span class="module_name">(PrototypeProject::Version)</span></a>' },
         ]
         $(document).observe('dom:loaded', function() {
         	// Setup search-during-typing.
@@ -4351,6 +4355,14 @@
         	} else {
         		search_box.removeClassName('untouched');
         	}
+        	
+        	search_box.insert({
+        	  after: new Element('span', { 'class': 'clear_button' }).update('x').observe('click', function(e) {
+        	    e.stopPropagation()
+          	  search_box.setValue('')
+          	  search_box.focus()
+          	})
+          })
         });
         
         function searchInIndex(query) {
@@ -4393,6 +4405,10 @@
       </form>
       <ol class='methods' id='search-results' style='display: none'></ol>
       <ol class='methods' id='index-entries'>
+        <li><a href="classes/PrototypeProject/Version.html#M000002"><span class="method_name">major</span> <span class="module_name">(PrototypeProject::Version)</span></a></li>
+        <li><a href="classes/PrototypeProject/Version.html#M000003"><span class="method_name">minor</span> <span class="module_name">(PrototypeProject::Version)</span></a></li>
+        <li><a href="classes/PrototypeProject/Version.html#M000001"><span class="method_name">string</span> <span class="module_name">(PrototypeProject::Version)</span></a></li>
+        <li><a href="classes/PrototypeProject/Version.html#M000004"><span class="method_name">tiny</span> <span class="module_name">(PrototypeProject::Version)</span></a></li>
       </ol>
     </div>
   </body>
