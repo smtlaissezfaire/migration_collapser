@@ -1,6 +1,6 @@
 begin
   require 'jeweler'
-  
+
   Jeweler::Tasks.new do |gemspec|
     gemspec.name        = "the-perfect-gem"
     gemspec.summary     = "Summarize your gem"
