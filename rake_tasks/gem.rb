@@ -14,12 +14,13 @@ begin
   Jeweler::Tasks.new do |gemspec|
     set_version_for_jewler
 
-    gemspec.name        = "the-perfect-gem"
-    gemspec.summary     = "Summarize your gem"
-    gemspec.description = "Describe your gem"
-    gemspec.email       = "scott@railsnewbie.com"
-    gemspec.homepage    = "http://github.com/smtlaissezfaire/the-perfect-gem"
-    gemspec.authors     = ["Scott Taylor"]
+    gemspec.name           = "the-perfect-gem"
+    gemspec.summary        = "Summarize your gem"
+    gemspec.description    = "Describe your gem"
+    gemspec.email          = "scott@railsnewbie.com"
+    gemspec.homepage       = "http://github.com/smtlaissezfaire/the-perfect-gem"
+    gemspec.authors        = ["Scott Taylor"]
+    gemspec.add_dependency "using", ">= 1.0.5"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
