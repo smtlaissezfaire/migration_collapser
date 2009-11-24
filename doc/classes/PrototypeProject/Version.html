@@ -38,70 +38,32 @@
       </div>
       <div id='content'>
         <div id='text'>
-          <div id='method-list'>
-            <h2>Methods</h2>
-            <h3>public class</h3>
-            <ol>
-              <li><a href="#M000002">major</a></li>
-              <li><a href="#M000003">minor</a></li>
-              <li><a href="#M000001">string</a></li>
-              <li><a href="#M000004">tiny</a></li>
-            </ol>
-          </div>
           <div id='section'>
-            <div id='methods'>
-              <h2>Public class methods</h2>
-              <div class='public-class method' id='method-M000002'>
-                <a name='M000002'>      </a>
-                <div class='synopsis'>
-                  <span class='name'>major</span>
-                  <span class='arguments'>()</span>
-                </div>
-                <div class='source'>
-                  <a class='source-toggle' href='#' onclick="toggleCode('M000002-source'); return false">
-                    [show source]
-                  </a>
-                  <pre id='M000002-source'>    <span class="ruby-comment cmt"># File lib/prototype_project/version.rb, line 8</span>&#x000A; 8:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">major</span>&#x000A; 9:         <span class="ruby-identifier">version_parts</span>[<span class="ruby-value">0</span>]&#x000A;10:       <span class="ruby-keyword kw">end</span></pre>
-                </div>
-              </div>
-              <div class='public-class method' id='method-M000003'>
-                <a name='M000003'>      </a>
-                <div class='synopsis'>
-                  <span class='name'>minor</span>
-                  <span class='arguments'>()</span>
-                </div>
-                <div class='source'>
-                  <a class='source-toggle' href='#' onclick="toggleCode('M000003-source'); return false">
-                    [show source]
-                  </a>
-                  <pre id='M000003-source'>    <span class="ruby-comment cmt"># File lib/prototype_project/version.rb, line 12</span>&#x000A;12:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">minor</span>&#x000A;13:         <span class="ruby-identifier">version_parts</span>[<span class="ruby-value">1</span>]&#x000A;14:       <span class="ruby-keyword kw">end</span></pre>
-                </div>
-              </div>
-              <div class='public-class method' id='method-M000001'>
-                <a name='M000001'>      </a>
-                <div class='synopsis'>
-                  <span class='name'>string</span>
-                  <span class='arguments'>()</span>
-                </div>
-                <div class='source'>
-                  <a class='source-toggle' href='#' onclick="toggleCode('M000001-source'); return false">
-                    [show source]
-                  </a>
-                  <pre id='M000001-source'>   <span class="ruby-comment cmt"># File lib/prototype_project/version.rb, line 4</span>&#x000A;4:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">string</span>&#x000A;5:         <span class="ruby-ivar">@string</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword kw">__FILE__</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;/../../VERSION&quot;</span>).<span class="ruby-identifier">chomp</span>&#x000A;6:       <span class="ruby-keyword kw">end</span></pre>
-                </div>
-              </div>
-              <div class='public-class method' id='method-M000004'>
-                <a name='M000004'>      </a>
-                <div class='synopsis'>
-                  <span class='name'>tiny</span>
-                  <span class='arguments'>()</span>
-                </div>
-                <div class='source'>
-                  <a class='source-toggle' href='#' onclick="toggleCode('M000004-source'); return false">
-                    [show source]
-                  </a>
-                  <pre id='M000004-source'>    <span class="ruby-comment cmt"># File lib/prototype_project/version.rb, line 16</span>&#x000A;16:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tiny</span>&#x000A;17:         <span class="ruby-identifier">version_parts</span>[<span class="ruby-value">2</span>]&#x000A;18:       <span class="ruby-keyword kw">end</span></pre>
-                </div>
+            <div id='constants-list'>
+              <h2>Constants</h2>
+              <div class='name-list'>
+                <table summary='Constants'>
+                  <tr class='top-aligned-row context-row'>
+                    <td class='context-item-name'>MAJOR</td>
+                    <td>=</td>
+                    <td class='context-item-value'>0</td>
+                  </tr>
+                  <tr class='top-aligned-row context-row'>
+                    <td class='context-item-name'>MINOR</td>
+                    <td>=</td>
+                    <td class='context-item-value'>0</td>
+                  </tr>
+                  <tr class='top-aligned-row context-row'>
+                    <td class='context-item-name'>TINY</td>
+                    <td>=</td>
+                    <td class='context-item-value'>0</td>
+                  </tr>
+                  <tr class='top-aligned-row context-row'>
+                    <td class='context-item-name'>STRING</td>
+                    <td>=</td>
+                    <td class='context-item-value'>&quot;#{MAJOR}.#{MINOR}.#{TINY}&quot;</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
