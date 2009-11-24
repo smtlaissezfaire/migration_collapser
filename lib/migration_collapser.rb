@@ -1,6 +1,6 @@
 require "using"
 
-module PrototypeProject
+module MigrationCollapser
   extend Using
 
   using :Version
