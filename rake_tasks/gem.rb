@@ -1,7 +1,19 @@
+require File.expand_path(File.dirname(__FILE__) + "/../lib/prototype_project")
+
 begin
   require 'jeweler'
 
+  def set_version_for_jewler
+    version = PrototypeProject::Version::STRING
+
+    File.open(File.expand_path(File.dirname(__FILE__) + "/../VERSION"), "w") do |f|
+      f << version
+    end
+  end
+
   Jeweler::Tasks.new do |gemspec|
+    set_version_for_jewler
+
     gemspec.name        = "the-perfect-gem"
     gemspec.summary     = "Summarize your gem"
     gemspec.description = "Describe your gem"
