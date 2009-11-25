@@ -5,4 +5,7 @@ module MigrationCollapser
 
   using :Version
   using :RevisionFinder
+  using :ConnectionAdapter
+  using :RailsLoader
+  using :FileReplacer
 end
