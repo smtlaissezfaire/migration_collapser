@@ -7,4 +7,5 @@ module MigrationCollapser
   using :RevisionFinder
   using :RailsLoader
   using :FileReplacer
+  using :Runner
 end
