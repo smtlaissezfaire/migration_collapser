@@ -60,7 +60,7 @@ class InitialSchema < ActiveRecord::Migration
     end
 
     def all_tables
-      execute("SHOW FULL TABLES WHERE table_type = 'VIEW'").all_hashes.map { |x| x.values.last }
+      execute("SHOW FULL TABLES WHERE table_type = 'BASE TABLES'").all_hashes.map { |x| x.values.last }
     end
 
     def views
