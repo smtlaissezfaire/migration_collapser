@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang='en'>
   <head>
-    <title>File: README.rdoc [migration_collapser]</title>
+    <title>File: file_replacer.rb [migration_collapser]</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-    <link href='../rdoc-style.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='../../../rdoc-style.css' media='screen' rel='stylesheet' type='text/css'>
     <script type='text/javascript'>
       //<![CDATA[
         function popupCode(url) {
@@ -25,10 +25,10 @@
   <body class='page'>
     <div class='file' id='wrapper'>
       <div class='header'>
-        <div class='name'>README.rdoc</div>
+        <h1 class='name'>file_replacer.rb</h1>
         <div class='paths'>
-          README.rdoc
-          (<a href="http://github.com/smtlaissezfaire/migration_collapserREADME.rdoc">view online</a>)
+          lib/migration_collapser/file_replacer.rb
+          (<a href="http://github.com/smtlaissezfaire/migration_collapserlib/migration_collapser/file_replacer.rb">view online</a>)
         </div>
         <div class='last-update'>
           Last Update:
@@ -37,28 +37,6 @@
       </div>
       <div id='content'>
         <div id='text'>
-          <div id='description'>
-            <h1>Migration Collapser</h1>
-            <p>
-            Collapse your rails migrations
-            </p>
-            <h2>Installation</h2>
-            <pre>gem install migration_collapser</pre>
-            <h2>Usage</h2>
-            <p>
-            First, load your production database:
-            </p>
-            <pre>mysql -u root my_dev_db &lt; my_production_db.sql</pre>
-            <p>
-            Dump your production database (without data) in
-            db/migrate/initial_schema.sql
-            </p>
-            <pre>mysqldump -u root --no-data my_dev_db &gt; db/migrate/initial_schema.sql</pre>
-            <p>
-            Run the migration collapser from RAILS_ROOT:
-            </p>
-            <pre>collapse_migrations</pre>
-          </div>
           <div id='section'>
           </div>
         </div>
