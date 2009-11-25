@@ -6,7 +6,7 @@ module MigrationCollapser
       RailsLoader.stub!(:load)
       RevisionFinder.stub!(:find).and_return "1234"
 
-      @replacer = mock 'replacer'
+      @replacer = mock 'replacer', :replace => true
       FileReplacer.stub!(:new).and_return @replacer
     end
 
@@ -34,6 +34,11 @@ module MigrationCollapser
     it "should use the correct revision number" do
       RevisionFinder.stub!(:find).and_return "1111"
       FileReplacer.should_receive(:new).with("1111").and_return @replacer
+      Runner.run
+    end
+
+    it "should replace the files" do
+      @replacer.should_receive(:replace)
       Runner.run
     end
   end
