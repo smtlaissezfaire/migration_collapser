@@ -20,7 +20,7 @@ begin
     gemspec.email          = "scott@railsnewbie.com"
     gemspec.homepage       = "http://github.com/smtlaissezfaire/migration_collapser"
     gemspec.authors        = ["Scott Taylor"]
-    gemspec.add_dependency "using", ">= 1.0.5"
+    gemspec.add_dependency "using"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
