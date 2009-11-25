@@ -1,0 +1,6 @@
+adapter: mysql
+encoding: utf8
+database: migration_collapser_spec
+username: root
+password:
+host: localhost

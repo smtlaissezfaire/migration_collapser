@@ -1,10 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + "/../lib/prototype_project")
+require File.expand_path(File.dirname(__FILE__) + "/../lib/migration_collapser")
 
 begin
   require 'jeweler'
 
   def set_version_for_jewler
-    version = PrototypeProject::Version::STRING
+    version = MigrationCollapser::Version::STRING
 
     File.open(File.expand_path(File.dirname(__FILE__) + "/../VERSION"), "w") do |f|
       f << version
@@ -14,13 +14,13 @@ begin
   Jeweler::Tasks.new do |gemspec|
     set_version_for_jewler
 
-    gemspec.name           = "the-perfect-gem"
-    gemspec.summary        = "Summarize your gem"
-    gemspec.description    = "Describe your gem"
+    gemspec.name           = "migration_collapser"
+    gemspec.summary        = "Collapse rails migrations"
+    gemspec.description    = "Collapse migrations already run in production"
     gemspec.email          = "scott@railsnewbie.com"
-    gemspec.homepage       = "http://github.com/smtlaissezfaire/the-perfect-gem"
+    gemspec.homepage       = "http://github.com/smtlaissezfaire/migration_collapser"
     gemspec.authors        = ["Scott Taylor"]
-    gemspec.add_dependency "using", ">= 1.0.5"
+    gemspec.add_dependency "using"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

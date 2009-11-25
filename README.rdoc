@@ -1,0 +1,21 @@
+= Migration Collapser
+
+Collapse your rails migrations
+
+== Installation
+
+  gem install migration_collapser
+
+== Usage
+
+First, load your production database:
+
+  mysql -u root my_dev_db < my_production_db.sql
+
+Dump your production database (without data) in db/migrate/initial_schema.sql
+
+  mysqldump -u root --no-data my_dev_db > db/migrate/initial_schema.sql
+
+Run the migration collapser from RAILS_ROOT:
+
+  collapse_migrations
