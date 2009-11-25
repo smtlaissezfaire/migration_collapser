@@ -3,7 +3,7 @@ module MigrationCollapser
     PATTERN = /(\d+)\_.+\.rb/
 
     def initialize(revision)
-      @revision = revision.to_i
+      self.revision = revision
     end
 
     attr_reader :revision
