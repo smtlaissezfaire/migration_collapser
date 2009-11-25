@@ -114,5 +114,17 @@ module MigrationCollapser
         @replacer.create_migration
       end
     end
+
+    describe "revision" do
+      it "should have it as an int when assigned in the constructor" do
+        FileReplacer.new("1234").revision.should == 1234
+      end
+
+      it "should cast it to an int when provided through the accessor" do
+        replacer = FileReplacer.new("1234")
+        replacer.revision = "1111"
+        replacer.revision.should == 1111
+      end
+    end
   end
 end

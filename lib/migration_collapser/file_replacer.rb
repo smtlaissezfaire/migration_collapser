@@ -3,10 +3,14 @@ module MigrationCollapser
     PATTERN = /(\d+)\_.+\.rb/
 
     def initialize(revision)
-      @revision = revision
+      @revision = revision.to_i
     end
 
-    attr_accessor :revision
+    attr_reader :revision
+
+    def revision=(num)
+      @revision = num.to_i
+    end
 
     def replace
       delete_files
